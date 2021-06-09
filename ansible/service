@@ -1,0 +1,8 @@
+ExecStart=/bin/java -Xms128m -Xmx256m -jar /home/ec2-user/test/spring-boot-web-service/target/spring-boot-web-service-1.0-SNAPSHOT.jar
+User=ec2-user
+Type=simple
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

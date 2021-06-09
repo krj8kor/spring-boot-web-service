@@ -1,0 +1,13 @@
+---
+- hosts: webserver
+  become: yes
+  become_user: root
+  gather_facts: yes
+  tasks:
+    - name: copying springboot service config
+      copy: src=service dest=/etc/systemd/system/springboot.service
+    - name: start service
+      service:
+         name: springboot.service
+         state: started
+
