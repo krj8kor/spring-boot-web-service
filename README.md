@@ -29,9 +29,9 @@ e.g Hitting the below url displays the content as "BLOCKED" as it contains the m
 
 http://localhost:8080//urlinfo/1/google.com:8080/search-the-internet.html?v=thevalue
 
-NOTE: replace localhost by the your server ip/domain name
+NOTE: replace localhost by your server ip/domain name
 
-## Automating the webservice as a service using ansible##
+## Automating the webservice as a service using ansible ##
 
 Running the playbook.yml in ansible folder will create a webservice application as a service
 
